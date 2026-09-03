@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Your copy of The Psychology of Attraction is ready to download.">
+<title>Thank You | The Psychology of Attraction</title>
+<style>
+:root{
+  --bg:#050505;
+  --panel:#0d0d0d;
+  --line:#252525;
+  --text:#f7f7f7;
+  --muted:#9c9c9c;
+  --yellow:#ffd21a;
+}
+*{box-sizing:border-box}
+html{background:#020202}
+body{
+  margin:0;
+  min-height:100vh;
+  background:#020202;
+  color:var(--text);
+  font-family:Inter,Arial,sans-serif;
+}
+button{font:inherit}
+.page{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  width:100%;
+  max-width:440px;
+  min-height:100vh;
+  margin:auto;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 82% 19%,rgba(255,210,26,.14),transparent 24%),
+    radial-gradient(circle at 10% 58%,rgba(255,255,255,.055),transparent 30%),
+    linear-gradient(180deg,#0c0c0c 0%,var(--bg) 45%,#030303 100%);
+}
+.page::before{
+  content:"";
+  position:absolute;
+  top:18%;
+  right:-180px;
+  width:330px;
+  height:330px;
+  border:1px solid rgba(255,210,26,.12);
+  border-radius:50%;
+  animation:spin 18s linear infinite;
+}
+.page::after{
+  content:"";
+  position:absolute;
+  top:18%;
+  right:50px;
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:var(--yellow);
+  box-shadow:0 0 30px 8px rgba(255,210,26,.32);
+  animation:float 3s ease-in-out infinite;
+}
+header{
+  position:relative;
+  z-index:2;
+  padding:19px 20px;
+  border-bottom:1px solid rgba(255,255,255,.07);
+  background:rgba(5,5,5,.72);
+  backdrop-filter:blur(18px);
+}
+.brand{
+  font-size:11px;
+  font-weight:950;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+}
+.brand span{color:var(--yellow)}
+main{
+  position:relative;
+  z-index:1;
+  display:flex;
+  flex:1;
+  align-items:center;
+  padding:54px 22px 62px;
+}
+.content{width:100%}
+.status{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  margin:0 0 26px;
+  padding:8px 12px;
+  border:1px solid #454545;
+  border-radius:30px;
+  color:var(--yellow);
+  font-size:9px;
+  font-weight:950;
+  letter-spacing:1.35px;
+  animation:fadeUp .7s both;
+}
+.check{
+  display:grid;
+  width:16px;
+  height:16px;
+  place-items:center;
+  border-radius:50%;
+  background:var(--yellow);
+  color:#050505;
+}
+.check svg{width:10px;height:10px}
+.thanks{
+  margin:0 0 11px;
+  color:#bcbcbc;
+  font-size:15px;
+  line-height:1.55;
+  animation:fadeUp .7s .1s both;
+}
+h1{
+  max-width:370px;
+  margin:0;
+  font-size:43px;
+  font-weight:950;
+  line-height:.94;
+  letter-spacing:-2.8px;
+  text-transform:uppercase;
+  animation:fadeUp .7s .18s both;
+}
+h1 span{color:var(--yellow)}
+.ready{
+  margin:23px 0 0;
+  color:var(--text);
+  font-size:17px;
+  font-weight:850;
+  animation:fadeUp .7s .26s both;
+}
+.download{
+  display:flex;
+  width:100%;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  margin-top:24px;
+  padding:17px 18px;
+  border:0;
+  border-radius:13px;
+  background:var(--yellow);
+  box-shadow:0 14px 38px rgba(255,210,26,.14);
+  color:#050505;
+  cursor:not-allowed;
+  font-size:14px;
+  font-weight:950;
+  opacity:1;
+  animation:fadeUp .7s .34s both;
+}
+.download svg{width:17px;height:17px}
+.note{
+  margin:19px 0 0;
+  padding:17px 0 0;
+  border-top:1px solid var(--line);
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.65;
+  animation:fadeUp .7s .42s both;
+}
+footer{
+  position:relative;
+  z-index:1;
+  padding:22px;
+  border-top:1px solid #1d1d1d;
+  color:#555;
+  font-size:9px;
+  text-align:center;
+}
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(18px)}
+  to{opacity:1;transform:translateY(0)}
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes float{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-10px)}
+}
+@media(min-width:700px){
+  body{
+    padding:28px 0;
+    background:radial-gradient(circle at 50% 0,#191919 0,#020202 42%);
+  }
+  .page{
+    min-height:calc(100vh - 56px);
+    border:1px solid #202020;
+    border-radius:30px;
+    box-shadow:0 35px 100px #000;
+  }
+}
+@media(max-width:350px){
+  h1{font-size:37px}
+  main{padding-inline:18px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    scroll-behavior:auto!important;
+    animation-duration:.01ms!important;
+    animation-iteration-count:1!important;
+  }
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="brand">THE ATTRACTION <span>PLAYBOOK</span></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <div class="status">
+        <span class="check" aria-hidden="true">
+          <svg viewBox="0 0 16 16" fill="none"><path d="m3 8.2 3 3L13 4.8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        PAYMENT SUCCESSFUL
+      </div>
+
+      <p class="thanks">Thank you for your purchase.</p>
+      <h1>THE PSYCHOLOGY<br>OF <span>ATTRACTION</span></h1>
+      <p class="ready">Your ebook is ready.</p>
+
+      <button class="download" type="button" disabled aria-label="Download your ebook, coming soon">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 20h14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        DOWNLOAD YOUR EBOOK
+      </button>
+
+      <p class="note">Your guide is ready to help you build confidence, improve communication and create genuine connections.</p>
+    </div>
+  </main>
+
+  <footer>© 2026 The Psychology of Attraction • Educational content</footer>
+</div>
+</body>
+</html>
